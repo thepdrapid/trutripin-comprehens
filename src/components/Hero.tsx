@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { Airplane, ArrowDown } from '@phosphor-icons/react';
+import { ArrowDown } from '@phosphor-icons/react';
 import { motion } from 'framer-motion';
+import logo from '@/assets/images/1080x1080-PNG.png';
 
 export function Hero() {
   const scrollToServices = () => {
@@ -19,8 +20,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Airplane size={48} weight="fill" className="text-accent" />
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <img src={logo} alt="TruTrip.in Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
             <h1 className="text-6xl md:text-7xl font-bold text-white tracking-tight">
               TruTrip.in
             </h1>
