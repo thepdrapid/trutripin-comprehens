@@ -1,28 +1,34 @@
-import { Hero } from '@/components/Hero';
-import { Services } from '@/components/Services';
-import { Vision } from '@/components/Vision';
-import { Solutions } from '@/components/Solutions';
-import { Technology } from '@/components/Technology';
-import { GlobalNetwork } from '@/components/GlobalNetwork';
-import { Sustainability } from '@/components/Sustainability';
-import { ContactCTA } from '@/components/ContactCTA';
-import { Footer } from '@/components/Footer';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { HomePage } from '@/pages/HomePage';
+import { AboutPage } from '@/pages/AboutPage';
+import { ServicesPage } from '@/pages/ServicesPage';
+import { CorporatePage } from '@/pages/CorporatePage';
+import { VisaPage } from '@/pages/VisaPage';
+import { ContactPage } from '@/pages/ContactPage';
 import { Toaster } from '@/components/ui/sonner';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Hero />
-      <Services />
-      <Vision />
-      <Solutions />
-      <Technology />
-      <GlobalNetwork />
-      <Sustainability />
-      <ContactCTA />
-      <Footer />
-      <Toaster />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/corporate" element={<CorporatePage />} />
+            <Route path="/visa" element={<VisaPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+        <Footer />
+        <Toaster />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,77 +1,86 @@
 # Planning Guide
 
-Create a sophisticated, trust-building landing page for TruTrip.in that communicates professionalism, global reach, and technological innovation in the travel industry.
+Create a sophisticated, multi-page travel platform for TruTrip.in that communicates professionalism, global reach, and technological innovation across six distinct pages with persistent navigation and comprehensive footer.
 
 **Experience Qualities**:
 1. **Professional** - Enterprise-grade design that inspires confidence in corporate and leisure travelers alike
-2. **Inspiring** - Beautiful imagery and smooth interactions that evoke wanderlust and excitement about travel possibilities
-3. **Trustworthy** - Clear information architecture and credible presentation that establishes TruTrip.in as a reliable global travel partner
+2. **Intuitive** - Clear navigation and information architecture that helps visitors quickly find what they need
+3. **Trustworthy** - Comprehensive compliance information and credible presentation that establishes TruTrip.in as a reliable global travel partner
 
-**Complexity Level**: Content Showcase (information-focused)
-  - The landing page focuses on presenting comprehensive information about TruTrip.in's services, vision, and capabilities with elegant organization and visual hierarchy to guide visitors through the value proposition.
+**Complexity Level**: Light Application (multiple features with basic state)
+  - Multi-page website with client-side routing, persistent header/footer, active navigation states, and organized content across Home, About, Services, Corporate Solutions, Visa Support, and Contact pages.
 
 ## Essential Features
 
-### Hero Section with Value Proposition
-- **Functionality**: Full-viewport hero with tagline "Travel in Style" and primary CTA
-- **Purpose**: Immediately communicate brand identity and core value proposition
-- **Trigger**: Page load
-- **Progression**: Animated entrance → Engaging hero visual → Clear CTA button → Smooth scroll to content
-- **Success criteria**: Visitor understands TruTrip.in's purpose within 3 seconds
+### Persistent Navigation Header
+- **Functionality**: Fixed header with logo, navigation menu (Home, About, Services, Corporate Solutions, Visa Support, Contact), and "Book Travel" CTA
+- **Purpose**: Provide consistent navigation across all pages
+- **Trigger**: Present on all pages
+- **Progression**: Click nav item → Route to new page → Header persists → Active state updates
+- **Success criteria**: Users can navigate between any pages seamlessly
 
-### Service Categories Grid
-- **Functionality**: Visual grid showcasing 6 core service areas (Flights, Hotels, Transport, Visa, Insurance, Packages)
-- **Purpose**: Allow visitors to quickly understand the breadth of services offered
-- **Trigger**: Scroll into view
-- **Progression**: Scroll → Fade-in animation → Hover reveals details → Click expands information
-- **Success criteria**: All service categories are scannable and understandable
+### Home Page - Service Overview
+- **Functionality**: Hero section with value proposition, overview cards for all service categories, partner logos, quick links
+- **Purpose**: Communicate comprehensive offering and build immediate credibility
+- **Trigger**: Default landing page
+- **Progression**: View hero → Scroll through service overviews → See partners → Click to detailed pages
+- **Success criteria**: Visitors understand TruTrip.in's full scope within 30 seconds
 
-### Vision & Mission Statement
-- **Functionality**: Prominent section highlighting TruTrip.in's vision and commitment
-- **Purpose**: Build emotional connection and establish brand values
-- **Trigger**: Scroll into view
-- **Progression**: Scroll → Content reveals → Key phrases emphasized visually
-- **Success criteria**: Visitor understands company values and differentiators
+### About Page - Company Information
+- **Functionality**: Company background, mission, mother company details, sister companies, values presentation
+- **Purpose**: Build trust through transparency and corporate structure
+- **Trigger**: Navigate from header menu
+- **Progression**: Read about company → Learn about values → Understand global structure → CTA to team/vision
+- **Success criteria**: Visitors understand company credibility and scope
 
-### Corporate & Leisure Solutions
-- **Functionality**: Two-column comparison or tabbed interface showing both business and leisure offerings
-- **Purpose**: Appeal to both B2B and B2C audiences
-- **Trigger**: Scroll or tab interaction
-- **Progression**: View → Select audience type → See relevant benefits → Understand value
-- **Success criteria**: Both corporate and leisure travelers see relevant information
+### Services Page - Detailed Service Catalog
+- **Functionality**: Comprehensive list of all service offerings with descriptions: Corporate/Leisure travel, Ticketing, MICE, Visa, Insurance, Ground Transportation, Destination Management
+- **Purpose**: Allow visitors to explore all available services in depth
+- **Trigger**: Navigate from header or home page
+- **Progression**: Browse service categories → Read details → Request custom quote
+- **Success criteria**: All services are clearly described and actionable
 
-### Technology & Integration Highlights
-- **Functionality**: Visual showcase of technology partnerships (GDS systems, AI capabilities)
-- **Purpose**: Establish credibility through technical capabilities and partnerships
-- **Trigger**: Scroll into view
-- **Progression**: Scroll → Logo grid appears → Hover shows partnership details
-- **Success criteria**: Technical sophistication is communicated clearly
+### Corporate Solutions Page - Technology Platform
+- **Functionality**: Showcase Travtek Travel Solutions, travel management platforms, API integration, CRM, dynamic pricing, TBuzz Media
+- **Purpose**: Appeal to B2B clients and demonstrate technical sophistication
+- **Trigger**: Navigate from header
+- **Progression**: View technology offerings → Understand integration capabilities → Request demo
+- **Success criteria**: Corporate clients understand technical value proposition
 
-### Global Network & Support
-- **Functionality**: Section highlighting 24/7 support, global presence, and sister companies
-- **Purpose**: Build trust through demonstrated reach and reliability
-- **Trigger**: Scroll into view
-- **Progression**: View → See global map or network visualization → Understand support availability
-- **Success criteria**: Visitor feels confident in global coverage and support
+### Visa Support Page - Documentation Assistance
+- **Functionality**: Country-specific visa guidance, documentation support, tracking services, insurance offerings
+- **Purpose**: Demonstrate expertise in complex travel documentation
+- **Trigger**: Navigate from header
+- **Progression**: Learn about visa services → Understand process → Apply for assistance
+- **Success criteria**: Users understand visa support offerings and how to engage
 
-### Contact CTA Section
-- **Functionality**: Final call-to-action for inquiries or booking consultation
-- **Purpose**: Convert interested visitors into leads
-- **Trigger**: Scroll to bottom
-- **Progression**: View CTA → Click → Contact form or external link
-- **Success criteria**: Clear path to next action
+### Contact Page - Lead Capture
+- **Functionality**: Contact form with validation, office addresses, support details including 24/7 helpline
+- **Purpose**: Convert interest into leads and provide support access
+- **Trigger**: Navigate from header or CTAs throughout site
+- **Progression**: View contact options → Fill form → Submit inquiry → Confirmation feedback
+- **Success criteria**: Visitors can easily reach out through multiple channels
+
+### Comprehensive Footer
+- **Functionality**: Three-tier footer with quick links, partners/affiliates, compliance statements including PCI, GDPR, WCAG, refund policies, visa disclaimers
+- **Purpose**: Build trust through transparency and provide legal compliance
+- **Trigger**: Bottom of every page
+- **Progression**: Scroll to bottom → Access footer links → Read policies → Understand compliance
+- **Success criteria**: All required compliance and policy information is accessible
 
 ## Edge Case Handling
 
-- **Slow connections**: Progressive image loading with elegant placeholders, critical content loads first
-- **Mobile devices**: Touch-optimized interactions, collapsed navigation, stacked layouts for readability
-- **Long content sections**: Smooth scrolling with progress indicators, back-to-top button appears after scrolling
-- **Missing images**: Graceful fallbacks with gradient backgrounds and icons
-- **Small screens**: Responsive typography scaling, collapsible sections for dense information
+- **Slow connections**: Progressive image loading with elegant placeholders, critical navigation loads first
+- **Mobile devices**: Hamburger menu for navigation, touch-optimized interactions, stacked layouts
+- **Form validation**: Real-time field validation on contact form with helpful error messages
+- **Deep linking**: Support direct navigation to any page via URL
+- **404 handling**: Graceful redirect to home page if invalid route accessed
+- **Long content sections**: Back-to-top button, smooth scrolling between sections
+- **Missing data**: Graceful fallbacks for images and content with placeholder states
 
 ## Design Direction
 
-The design should feel premium, trustworthy, and globally sophisticated - drawing inspiration from luxury travel brands and enterprise SaaS platforms. It should balance aspiration (beautiful travel imagery) with professionalism (clean layouts, clear information). A rich interface with thoughtful use of imagery, subtle animations, and layered depth serves the purpose better than stark minimalism.
+The design should feel premium, trustworthy, and globally sophisticated - drawing inspiration from luxury travel brands and enterprise SaaS platforms. It should balance aspiration (travel excitement) with professionalism (clear information, compliance transparency). A rich interface with thoughtful use of color, clear typography, and purposeful animations serves the multi-page structure better than stark minimalism.
 
 ## Color Selection
 
@@ -112,36 +121,40 @@ Animations should feel polished and purposeful, enhancing the premium brand perc
 ## Component Selection
 
 - **Components**: 
-  - Card: Service showcases with hover states and subtle shadows
+  - Card: For service showcases and information blocks
   - Button: Primary CTAs with accent color, secondary with outline style
-  - Tabs: For Corporate vs Leisure sections
-  - Badge: Technology partner logos and certifications
-  - Separator: Elegant dividers between major sections
-  - Scroll-area: For any content-heavy sections if needed
+  - Badge: For partner logos and feature highlights
+  - Separator: Elegant dividers between sections
+  - Form components: Input, Textarea, Label for contact form
+  - Sheet: Mobile navigation menu
+  - Toast (Sonner): Form submission feedback
 - **Customizations**: 
-  - Hero section with full-height background and gradient overlays
+  - Responsive navigation header with mobile drawer
+  - Page routing system with active nav states
+  - Three-tier footer with organized link sections
   - Service cards with icon integration from Phosphor
-  - Animated counter components for statistics (if included)
-  - Custom logo grid for partners and sister companies
+  - Contact form with validation and submission handling
 - **States**: 
-  - Buttons: Subtle scale on hover (1.02), shadow elevation, smooth color transitions
-  - Cards: Lift effect on hover with shadow expansion, border highlight
-  - Links: Underline animation from center, color shift
+  - Navigation links: Active state shows current page, hover with subtle color shift
+  - Buttons: Scale on hover (1.02), shadow elevation, smooth transitions
+  - Cards: Lift effect on hover with shadow expansion
+  - Form inputs: Focus states with ring, error states with red border
 - **Icon Selection**: 
-  - Airplane, Globe, Buildings for services
+  - Airplane, Globe, Buildings for navigation and services
   - Shield, Clock for support features
-  - ChartLine, Lightning for technology
-  - Users, Briefcase for corporate/leisure
-  - Use colored icons for primary features, monochrome for supporting elements
+  - ChartLine, Sparkle for technology
+  - Users, Briefcase for corporate
+  - FileText, MapPin for visa services
+  - Phone, Envelope for contact
 - **Spacing**: 
-  - Section padding: py-24 on desktop, py-16 on mobile
-  - Card gaps: gap-8 on desktop, gap-6 on mobile
+  - Section padding: py-20 on desktop, py-12 on mobile
+  - Card gaps: gap-6 on desktop, gap-4 on mobile
   - Content max-width: max-w-7xl centered
-  - Consistent 4-point grid system (4, 8, 12, 16, 24, 32, 48, 64px)
+  - Footer sections: Hierarchical spacing with py-12 top, py-8 middle, py-6 bottom
 - **Mobile**: 
-  - Hero height reduces to 70vh on mobile
-  - Service grid: 2 columns on tablet, 1 column on mobile
-  - Navigation collapses to hamburger menu
-  - Font sizes scale down 15-20% on mobile
-  - Touch targets minimum 44x44px for all interactive elements
-  - Sticky CTA button appears on scroll for mobile users
+  - Hamburger menu navigation in Sheet component
+  - Hero height adapts to content on mobile
+  - Service grids: 2 columns on tablet, 1 column on mobile
+  - Font sizes scale appropriately
+  - Touch targets minimum 44x44px
+  - Footer stacks vertically with clear section separation
