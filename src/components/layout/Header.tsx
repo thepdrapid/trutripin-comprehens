@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -17,17 +17,34 @@ const navItems = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className={cn(
+      "sticky top-0 z-50 w-full transition-all duration-300",
+      scrolled 
+        ? "border-b border-border/50 bg-card/80 backdrop-blur-xl shadow-lg shadow-primary/5" 
+        : "border-b border-border/20 bg-card/40 backdrop-blur-md"
+    )}>
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3">
-            <img src={logoImage} alt="TruTrip.in Logo" className="h-10 w-10 object-contain" />
-            <div className="font-serif text-2xl font-bold text-primary">
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/30 rounded-full blur-md group-hover:blur-lg transition-all" />
+              <img src={logoImage} alt="TruTrip.in Logo" className="h-10 w-10 object-contain relative z-10 group-hover:scale-110 transition-transform" />
+            </div>
+            <div className="font-serif text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               TruTrip<span className="text-accent">.in</span>
             </div>
           </Link>
@@ -38,33 +55,42 @@ export function Header() {
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  'px-4 py-2 text-sm font-medium rounded-md transition-colors',
+                  'relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200',
                   isActive(item.path)
-                    ? 'text-primary bg-primary/10'
-                    : 'text-muted-foreground hover:text-primary hover:bg-muted'
+                    ? 'text-primary-foreground'
+                    : 'text-foreground/80 hover:text-foreground'
                 )}
               >
-                {item.name}
+                {isActive(item.path) && (
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-lg shadow-lg shadow-primary/30" />
+                )}
+                {!isActive(item.path) && (
+                  <span className="absolute inset-0 bg-muted/40 rounded-lg opacity-0 hover:opacity-100 transition-opacity backdrop-blur-sm" />
+                )}
+                <span className="relative z-10">{item.name}</span>
               </Link>
             ))}
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button className="hidden lg:inline-flex" size="default">
+            <Button 
+              className="hidden lg:inline-flex bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 hover:scale-105" 
+              size="default"
+            >
               Book Travel
             </Button>
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="hover:bg-muted/60">
                   <List className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card/95 backdrop-blur-xl border-border/50">
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center space-x-2">
                     <img src={logoImage} alt="TruTrip.in Logo" className="h-8 w-8 object-contain" />
-                    <div className="font-serif text-xl font-bold text-primary">
+                    <div className="font-serif text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                       TruTrip<span className="text-accent">.in</span>
                     </div>
                   </div>
@@ -72,6 +98,7 @@ export function Header() {
                     variant="ghost"
                     size="icon"
                     onClick={() => setIsOpen(false)}
+                    className="hover:bg-muted/60"
                   >
                     <X className="h-5 w-5" />
                   </Button>
@@ -83,16 +110,22 @@ export function Header() {
                       to={item.path}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        'px-4 py-3 text-base font-medium rounded-md transition-colors',
+                        'relative px-4 py-3 text-base font-medium rounded-lg transition-all',
                         isActive(item.path)
-                          ? 'text-primary bg-primary/10'
-                          : 'text-muted-foreground hover:text-primary hover:bg-muted'
+                          ? 'text-primary-foreground'
+                          : 'text-foreground/80 hover:text-foreground'
                       )}
                     >
-                      {item.name}
+                      {isActive(item.path) && (
+                        <span className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-lg" />
+                      )}
+                      {!isActive(item.path) && (
+                        <span className="absolute inset-0 bg-muted/40 rounded-lg opacity-0 hover:opacity-100 transition-opacity" />
+                      )}
+                      <span className="relative z-10">{item.name}</span>
                     </Link>
                   ))}
-                  <Button className="mt-4 w-full" size="lg">
+                  <Button className="mt-4 w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg shadow-primary/30" size="lg">
                     Book Travel
                   </Button>
                 </nav>

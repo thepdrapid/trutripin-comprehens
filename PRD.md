@@ -1,160 +1,142 @@
 # Planning Guide
 
-Create a sophisticated, multi-page travel platform for TruTrip.in that communicates professionalism, global reach, and technological innovation across six distinct pages with persistent navigation and comprehensive footer.
+Create a next-generation, immersive travel platform for TruTrip.in that pushes the boundaries of web design with a stunning glassmorphic dark theme, animated particle systems, and cutting-edge visual effects that make users say "wow" while maintaining professionalism and usability.
 
 **Experience Qualities**:
-1. **Professional** - Enterprise-grade design that inspires confidence in corporate and leisure travelers alike
-2. **Intuitive** - Clear navigation and information architecture that helps visitors quickly find what they need
-3. **Trustworthy** - Comprehensive compliance information and credible presentation that establishes TruTrip.in as a reliable global travel partner
+1. **Futuristic** - A design that feels like it's from the future with immersive backgrounds, animated particles, and glassmorphic surfaces that create depth
+2. **Immersive** - Users should feel transported into a digital travel experience with dynamic backgrounds, glowing effects, and smooth transitions
+3. **Premium** - Ultra-modern aesthetic with gradient accents, subtle animations, and polished micro-interactions that exceed market standards
 
-**Complexity Level**: Light Application (multiple features with basic state)
-  - Multi-page website with client-side routing, persistent header/footer, active navigation states, and organized content across Home, About, Services, Corporate Solutions, Visa Support, and Contact pages.
+**Complexity Level**: Complex Application (advanced functionality with state-of-the-art visual design)
+  - Multi-page website featuring animated particle systems, dynamic glassmorphic components, gradient-based design language, and immersive background effects that set a new standard for travel platforms.
 
 ## Essential Features
 
-### Persistent Navigation Header
-- **Functionality**: Fixed header with logo, navigation menu (Home, About, Services, Corporate Solutions, Visa Support, Contact), and "Book Travel" CTA
-- **Purpose**: Provide consistent navigation across all pages
-- **Trigger**: Present on all pages
-- **Progression**: Click nav item → Route to new page → Header persists → Active state updates
-- **Success criteria**: Users can navigate between any pages seamlessly
+### Immersive Background System
+- **Functionality**: Animated particle network with connecting lines, gradient orbs with blur effects, layered background animations
+- **Purpose**: Create an immersive, futuristic atmosphere that differentiates TruTrip.in from all competitors
+- **Trigger**: Present on all pages, animates continuously
+- **Progression**: Page loads → Particles animate → Lines connect → Gradient orbs pulse → Continuous ambient animation
+- **Success criteria**: Users are visually impressed and feel they're experiencing something unique
 
-### Home Page - Service Overview
-- **Functionality**: Hero section with value proposition, overview cards for all service categories, partner logos, quick links
-- **Purpose**: Communicate comprehensive offering and build immediate credibility
-- **Trigger**: Default landing page
-- **Progression**: View hero → Scroll through service overviews → See partners → Click to detailed pages
-- **Success criteria**: Visitors understand TruTrip.in's full scope within 30 seconds
+### Glassmorphic Navigation Header
+- **Functionality**: Semi-transparent header with backdrop blur, gradient text effects, animated gradient buttons, scroll-reactive opacity
+- **Purpose**: Maintain navigation access while contributing to the futuristic aesthetic
+- **Trigger**: Sticky header on all pages
+- **Progression**: Scroll → Header becomes more opaque → Gradient effects intensify → Active states glow
+- **Success criteria**: Header is both functional and visually stunning
 
-### About Page - Company Information
-- **Functionality**: Company background, mission, mother company details, sister companies, values presentation
-- **Purpose**: Build trust through transparency and corporate structure
-- **Trigger**: Navigate from header menu
-- **Progression**: Read about company → Learn about values → Understand global structure → CTA to team/vision
-- **Success criteria**: Visitors understand company credibility and scope
+### Next-Gen Home Page Hero
+- **Functionality**: Large gradient text, animated logo with glow effects, floating particles, gradient buttons with hover animations, animated scroll indicator
+- **Purpose**: Immediately capture attention and communicate innovation
+- **Trigger**: Landing page entrance
+- **Progression**: Page loads → Text fades in → Logo glows → Particles float → User is captivated → CTA draws attention
+- **Success criteria**: Users pause to appreciate the design before scrolling
 
-### Services Page - Detailed Service Catalog
-- **Functionality**: Comprehensive list of all service offerings with descriptions: Corporate/Leisure travel, Ticketing, MICE, Visa, Insurance, Ground Transportation, Destination Management
-- **Purpose**: Allow visitors to explore all available services in depth
-- **Trigger**: Navigate from header or home page
-- **Progression**: Browse service categories → Read details → Request custom quote
-- **Success criteria**: All services are clearly described and actionable
+### Glassmorphic Service Cards
+- **Functionality**: Semi-transparent cards with backdrop blur, gradient borders, icon animations, glow effects on hover, gradient overlays
+- **Purpose**: Present services in a premium, interactive way
+- **Trigger**: Services section scroll into view
+- **Progression**: Cards animate in → Hover triggers glow → Icon animates → Gradient overlay appears → User engages
+- **Success criteria**: Each card feels like a premium interactive element
 
-### Corporate Solutions Page - Technology Platform
-- **Functionality**: Showcase Travtek Travel Solutions, travel management platforms, API integration, CRM, dynamic pricing, TBuzz Media
-- **Purpose**: Appeal to B2B clients and demonstrate technical sophistication
-- **Trigger**: Navigate from header
-- **Progression**: View technology offerings → Understand integration capabilities → Request demo
-- **Success criteria**: Corporate clients understand technical value proposition
+### Multi-Page Experience (Home, About, Services, Corporate, Visa, Contact)
+- **Functionality**: All pages share the immersive background and glassmorphic design language with page-specific content
+- **Purpose**: Comprehensive information architecture with consistent premium experience
+- **Trigger**: Navigation between pages
+- **Progression**: Click nav → Smooth transition → Background persists → Content animates in
+- **Success criteria**: All pages feel cohesive and equally impressive
 
-### Visa Support Page - Documentation Assistance
-- **Functionality**: Country-specific visa guidance, documentation support, tracking services, insurance offerings
-- **Purpose**: Demonstrate expertise in complex travel documentation
-- **Trigger**: Navigate from header
-- **Progression**: Learn about visa services → Understand process → Apply for assistance
-- **Success criteria**: Users understand visa support offerings and how to engage
-
-### Contact Page - Lead Capture
-- **Functionality**: Contact form with validation, office addresses, support details including 24/7 helpline
-- **Purpose**: Convert interest into leads and provide support access
-- **Trigger**: Navigate from header or CTAs throughout site
-- **Progression**: View contact options → Fill form → Submit inquiry → Confirmation feedback
-- **Success criteria**: Visitors can easily reach out through multiple channels
-
-### Comprehensive Footer
-- **Functionality**: Three-tier footer with quick links, partners/affiliates, compliance statements including PCI, GDPR, WCAG, refund policies, visa disclaimers
-- **Purpose**: Build trust through transparency and provide legal compliance
+### Enhanced Footer
+- **Functionality**: Glassmorphic footer with gradient accents, animated social icons, gradient dividers
+- **Purpose**: Complete the premium experience while providing necessary information
 - **Trigger**: Bottom of every page
-- **Progression**: Scroll to bottom → Access footer links → Read policies → Understand compliance
-- **Success criteria**: All required compliance and policy information is accessible
+- **Progression**: Scroll to bottom → Footer revealed → Icons animate on hover
+- **Success criteria**: Even the footer feels special and polished
 
 ## Edge Case Handling
 
-- **Slow connections**: Progressive image loading with elegant placeholders, critical navigation loads first
-- **Mobile devices**: Hamburger menu for navigation, touch-optimized interactions, stacked layouts
-- **Form validation**: Real-time field validation on contact form with helpful error messages
-- **Deep linking**: Support direct navigation to any page via URL
-- **404 handling**: Graceful redirect to home page if invalid route accessed
-- **Long content sections**: Back-to-top button, smooth scrolling between sections
-- **Missing data**: Graceful fallbacks for images and content with placeholder states
+- **Performance**: Particle animations use requestAnimationFrame and are optimized for smooth 60fps performance
+- **Reduced motion**: Respect prefers-reduced-motion for accessibility
+- **Mobile devices**: Scaled down particle count, optimized animations, touch-optimized interactions
+- **Slow connections**: Background images load progressively, animations work without external dependencies
+- **Older browsers**: Graceful degradation of backdrop-filter and blur effects
+- **High contrast mode**: Ensure content remains readable with increased contrast
 
 ## Design Direction
 
-The design should feel premium, trustworthy, and globally sophisticated - drawing inspiration from luxury travel brands and enterprise SaaS platforms. It should balance aspiration (travel excitement) with professionalism (clear information, compliance transparency). A rich interface with thoughtful use of color, clear typography, and purposeful animations serves the multi-page structure better than stark minimalism.
+The design should feel like stepping into the future of travel - immersive, premium, and unlike anything currently in the market. Think cyberpunk aesthetics meets luxury brands, with glassmorphism, animated particles, and gradient-heavy design. Users should feel they're experiencing cutting-edge technology. The interface should be rich with subtle animations, glowing effects, and depth created through layering and blur.
 
 ## Color Selection
 
-Complementary color scheme - combining trust-building blue with energetic warm accents that evoke travel excitement.
+Custom triadic palette with cyan, magenta, and amber creating a futuristic, high-tech atmosphere with depth through dark backgrounds.
 
-- **Primary Color**: Deep professional blue (oklch(0.45 0.15 250)) - Communicates trust, reliability, and corporate professionalism while maintaining visual appeal
-- **Secondary Colors**: 
-  - Lighter blue (oklch(0.85 0.05 250)) for backgrounds and secondary elements
-  - Navy (oklch(0.25 0.12 250)) for headers and emphasis
-- **Accent Color**: Coral/sunset orange (oklch(0.68 0.18 35)) - Evokes travel, adventure, and warmth; used for CTAs and highlights
+- **Primary Color**: Electric Cyan (oklch(0.75 0.19 195)) - Communicates innovation, technology, and forward-thinking; creates striking contrast against dark background
+- **Secondary Colors**: Vibrant Magenta (oklch(0.70 0.22 310)) - Adds energy and creates beautiful gradient combinations with cyan
+- **Accent Color**: Warm Amber (oklch(0.80 0.25 35)) - Provides warmth and draws attention to key actions, completes the triadic harmony
+- **Background**: Deep Space Blue (oklch(0.10 0.05 270)) - Rich dark background that makes colors pop and creates depth
 - **Foreground/Background Pairings**:
-  - Background (Light blue-tinted white oklch(0.98 0.01 250)): Dark navy text (oklch(0.2 0.08 250)) - Ratio 12.3:1 ✓
-  - Card (Pure white oklch(1 0 0)): Dark navy text (oklch(0.2 0.08 250)) - Ratio 15.8:1 ✓
-  - Primary (Deep blue oklch(0.45 0.15 250)): White text (oklch(1 0 0)) - Ratio 7.2:1 ✓
-  - Secondary (Light blue oklch(0.85 0.05 250)): Dark navy text (oklch(0.2 0.08 250)) - Ratio 11.5:1 ✓
-  - Accent (Coral oklch(0.68 0.18 35)): Dark navy text (oklch(0.2 0.08 250)) - Ratio 5.8:1 ✓
-  - Muted (Soft gray-blue oklch(0.92 0.01 250)): Medium gray text (oklch(0.5 0.02 250)) - Ratio 6.1:1 ✓
+  - Background (Deep Space oklch(0.10 0.05 270)): Near-white text (oklch(0.98 0.01 270)) - Ratio 14.2:1 ✓
+  - Card (Semi-transparent glass oklch(0.14 0.04 275 / 0.6)): Near-white text (oklch(0.98 0.01 270)) - Ratio 12.8:1 ✓
+  - Primary (Electric Cyan oklch(0.75 0.19 195)): Dark background text (oklch(0.10 0.05 270)) - Ratio 11.4:1 ✓
+  - Secondary (Vibrant Magenta oklch(0.70 0.22 310)): Near-white text (oklch(0.98 0.01 270)) - Ratio 9.2:1 ✓
+  - Accent (Warm Amber oklch(0.80 0.25 35)): Dark background text (oklch(0.10 0.05 270)) - Ratio 12.7:1 ✓
+  - Muted (Translucent gray oklch(0.18 0.03 275 / 0.4)): Muted text (oklch(0.65 0.02 270)) - Ratio 4.8:1 ✓
 
 ## Font Selection
 
-Typography should convey modern professionalism with excellent readability across all devices - geometric sans-serifs for headings to communicate innovation, paired with humanist sans-serifs for body text to ensure approachability and readability.
+Modern, tech-forward typography that communicates innovation while maintaining readability - Outfit for headings creates a distinctive geometric look, Inter for body ensures clarity.
 
 - **Typographic Hierarchy**:
-  - H1 (Hero title): Outfit Bold/52px/tight letter spacing (-0.02em) - Strong, modern presence
-  - H2 (Section headers): Outfit SemiBold/36px/tight letter spacing (-0.01em) - Clear hierarchy
-  - H3 (Subsections): Outfit Medium/24px/normal spacing - Organized structure
-  - Body (Primary content): Inter Regular/16px/1.6 line height - Maximum readability
-  - Small (Captions, labels): Inter Medium/14px/1.5 line height - Clear supporting text
-  - CTA Buttons: Outfit SemiBold/16px/0.02em letter spacing - Confident action
+  - H1 (Hero title): Outfit Bold/80px/extra tight letter spacing (-0.02em) - Maximum impact with gradient text
+  - H2 (Section headers): Outfit Bold/56px/tight letter spacing (-0.02em) - Strong hierarchy with gradient effects
+  - H3 (Card titles): Outfit SemiBold/28px/tight spacing (-0.01em) - Clear categorization
+  - Body (Primary content): Inter Regular/18px/1.7 line height - Comfortable reading with enhanced line height
+  - Small (Supporting text): Inter Regular/16px/1.6 line height - Clear secondary information
+  - CTA Buttons: Outfit SemiBold/18px/normal spacing - Confident, clickable
 
 ## Animations
 
-Animations should feel polished and purposeful, enhancing the premium brand perception while guiding user attention through the content journey without creating impatience.
+Animations are central to the experience - they create the futuristic, immersive feeling that makes users say "wow" while remaining purposeful and smooth.
 
-- **Purposeful Meaning**: Smooth scroll-triggered reveals communicate progression through the story; subtle hover states suggest interactivity; gentle parallax effects add depth and sophistication
-- **Hierarchy of Movement**: Hero section gets most prominent animation (fade + slide up), service cards animate in sequence, CTAs have micro-interactions on hover, background elements use subtle parallax
+- **Purposeful Meaning**: Particle animations create ambient life; gradient pulses suggest energy flow; hover effects reward exploration; page transitions maintain spatial continuity; glow effects emphasize interactivity
+- **Hierarchy of Movement**: Background particles (constant subtle motion) → Section reveals (scroll-triggered) → Card animations (sequence on view) → Hover micro-interactions (instant feedback) → Button effects (rewarding clicks)
 
 ## Component Selection
 
 - **Components**: 
-  - Card: For service showcases and information blocks
-  - Button: Primary CTAs with accent color, secondary with outline style
-  - Badge: For partner logos and feature highlights
-  - Separator: Elegant dividers between sections
-  - Form components: Input, Textarea, Label for contact form
-  - Sheet: Mobile navigation menu
-  - Toast (Sonner): Form submission feedback
+  - Card: Glassmorphic style with backdrop-blur-xl, semi-transparent backgrounds, gradient borders
+  - Button: Gradient backgrounds from primary to secondary, glow effects, scale transforms
+  - Custom ImmersiveBackground: Canvas-based particle system with connecting lines
+  - Sheet: Glassmorphic mobile menu with backdrop blur
+  - Toast (Sonner): Themed to match glassmorphic aesthetic
 - **Customizations**: 
-  - Responsive navigation header with mobile drawer
-  - Page routing system with active nav states
-  - Three-tier footer with organized link sections
-  - Service cards with icon integration from Phosphor
-  - Contact form with validation and submission handling
+  - Particle animation system with canvas rendering
+  - Gradient orbs with pulsing blur animations
+  - Glassmorphic cards with hover-triggered gradient overlays
+  - Animated navigation with scroll-reactive opacity
+  - Gradient text effects throughout
+  - Icon containers with glow effects
+  - Scroll-triggered reveal animations
 - **States**: 
-  - Navigation links: Active state shows current page, hover with subtle color shift
-  - Buttons: Scale on hover (1.02), shadow elevation, smooth transitions
-  - Cards: Lift effect on hover with shadow expansion
-  - Form inputs: Focus states with ring, error states with red border
+  - Navigation: Gradient background on active, glow effect on hover
+  - Buttons: Scale 1.05 on hover, gradient shift, shadow intensification, glow expansion
+  - Cards: Lift effect (translateY -8px), gradient overlay appears, border color shifts, glow shadow
+  - Inputs: Glow ring on focus matching theme colors
 - **Icon Selection**: 
-  - Airplane, Globe, Buildings for navigation and services
-  - Shield, Clock for support features
-  - ChartLine, Sparkle for technology
-  - Users, Briefcase for corporate
-  - FileText, MapPin for visa services
-  - Phone, Envelope for contact
+  - Phosphor Icons with duotone weight for depth
+  - Animated on hover with scale and rotate transforms
+  - Wrapped in gradient containers with blur effects
+  - Social icons in footer with interactive glow states
 - **Spacing**: 
-  - Section padding: py-20 on desktop, py-12 on mobile
-  - Card gaps: gap-6 on desktop, gap-4 on mobile
-  - Content max-width: max-w-7xl centered
-  - Footer sections: Hierarchical spacing with py-12 top, py-8 middle, py-6 bottom
+  - Section padding: py-24 for breathing room
+  - Card gaps: gap-6 for clear separation
+  - Large radius: 1rem for modern, soft feel
+  - Generous whitespace to let glassmorphic effects shine
 - **Mobile**: 
-  - Hamburger menu navigation in Sheet component
-  - Hero height adapts to content on mobile
-  - Service grids: 2 columns on tablet, 1 column on mobile
-  - Font sizes scale appropriately
-  - Touch targets minimum 44x44px
-  - Footer stacks vertically with clear section separation
+  - Reduced particle count for performance
+  - Maintained glassmorphic effects with optimized blur
+  - Touch-optimized hover states
+  - Responsive gradient text sizing
+  - Stacked layouts with full-width cards
+  - Optimized animations for mobile performance
