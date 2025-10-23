@@ -42,46 +42,40 @@ export function Header() {
     <header className={cn(
       "sticky top-0 z-50 w-full transition-all duration-500",
       scrolled 
-        ? "border-b border-border/40 liquid-glass shadow-2xl shadow-primary/10" 
-        : "border-b border-border/20 bg-background/20 backdrop-blur-md"
+        ? "glass-card shadow-lg border-b" 
+        : "bg-white/60 backdrop-blur-md border-b border-border/50"
     )}>
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-secondary/40 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 animate-pulse" />
-              <div className="relative w-12 h-12 rounded-full holographic-border flex items-center justify-center">
+              <div className="absolute inset-0 gradient-bg rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-all duration-500" />
+              <div className="relative w-12 h-12 rounded-full animated-border flex items-center justify-center bg-white">
                 <img src={logoImage} alt="TruTrip.in Logo" className="h-9 w-9 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300" />
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="font-serif text-2xl font-bold text-holographic">
+              <div className="font-bold text-2xl gradient-text">
                 TruTrip.in
               </div>
-              <div className="text-xs text-muted-foreground tracking-wider">LIQUID TRAVEL</div>
+              <div className="text-xs text-muted-foreground tracking-wider font-medium">SMART TRAVEL</div>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-2">
+          <nav className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  'relative px-5 py-2.5 text-sm font-medium rounded-2xl transition-all duration-300 group',
+                  'relative px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300',
                   isActive(item.path)
-                    ? 'text-primary-foreground'
-                    : 'text-foreground/90 hover:text-foreground'
+                    ? 'text-primary'
+                    : 'text-foreground/70 hover:text-foreground hover:bg-muted/50'
                 )}
               >
                 {isActive(item.path) && (
-                  <>
-                    <span className="absolute inset-0 holographic-border rounded-2xl shadow-lg shadow-primary/40" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl shimmer-overlay" />
-                  </>
-                )}
-                {!isActive(item.path) && (
-                  <span className="absolute inset-0 liquid-glass rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-1 gradient-bg rounded-full" />
                 )}
                 <span className="relative z-10 text-sm">{item.name}</span>
               </Link>
@@ -97,7 +91,7 @@ export function Header() {
                     placeholder="Search destinations..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-48 liquid-glass border-border/40 focus:border-primary/60 placeholder:text-muted-foreground/60"
+                    className="w-52 bg-white/80 border-border/60 focus:border-primary/60 placeholder:text-muted-foreground/60"
                     autoFocus
                   />
                   <Button
@@ -115,36 +109,33 @@ export function Header() {
                   variant="ghost"
                   size="icon"
                   onClick={() => setSearchOpen(true)}
-                  className="hover:bg-muted/40 relative group"
+                  className="hover:bg-muted/50 relative group"
                 >
                   <MagnifyingGlass className="h-5 w-5" weight="bold" />
-                  <span className="absolute inset-0 rounded-full bg-primary/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Button>
               )}
             </div>
             
             <Button 
-              className="hidden lg:inline-flex relative group overflow-hidden rounded-2xl shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 transition-all duration-500" 
+              className="hidden lg:inline-flex relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 gradient-bg shimmer-effect" 
               size="default"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent shimmer-overlay" />
-              <span className="relative z-10 font-semibold text-primary-foreground">Book Travel</span>
+              <span className="relative z-10 font-semibold">Book Travel</span>
             </Button>
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon" className="hover:bg-muted/60 relative group">
+                <Button variant="ghost" size="icon" className="hover:bg-muted/60">
                   <List className="h-6 w-6" weight="bold" />
-                  <span className="absolute inset-0 rounded-lg bg-primary/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px] liquid-glass border-border/30">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] glass-card">
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 rounded-full holographic-border flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full animated-border flex items-center justify-center bg-white">
                       <img src={logoImage} alt="TruTrip.in Logo" className="h-8 w-8 object-contain" />
                     </div>
-                    <div className="font-serif text-xl font-bold text-holographic">
+                    <div className="font-bold text-xl gradient-text">
                       TruTrip.in
                     </div>
                   </div>
@@ -164,7 +155,7 @@ export function Header() {
                     placeholder="Search destinations..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="liquid-glass border-border/40 focus:border-primary/60"
+                    className="bg-white border-border/60 focus:border-primary/60"
                   />
                 </form>
 
@@ -175,23 +166,16 @@ export function Header() {
                       to={item.path}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        'relative px-4 py-3 text-base font-medium rounded-2xl transition-all duration-300',
+                        'relative px-4 py-3 text-base font-medium rounded-lg transition-all duration-300',
                         isActive(item.path)
-                          ? 'text-primary-foreground'
-                          : 'text-foreground/80 hover:text-foreground'
+                          ? 'bg-primary/10 text-primary'
+                          : 'text-foreground/80 hover:text-foreground hover:bg-muted/50'
                       )}
                     >
-                      {isActive(item.path) && (
-                        <span className="absolute inset-0 holographic-border rounded-2xl" />
-                      )}
-                      {!isActive(item.path) && (
-                        <span className="absolute inset-0 liquid-glass rounded-2xl opacity-0 hover:opacity-100 transition-opacity" />
-                      )}
                       <span className="relative z-10">{item.name}</span>
                     </Link>
                   ))}
-                  <Button className="mt-4 w-full relative group overflow-hidden rounded-2xl shadow-lg shadow-primary/30" size="lg">
-                    <span className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent shimmer-overlay" />
+                  <Button className="mt-4 w-full gradient-bg shimmer-effect" size="lg">
                     <span className="relative z-10 font-semibold">Book Travel</span>
                   </Button>
                 </nav>

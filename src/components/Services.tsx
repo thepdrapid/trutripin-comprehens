@@ -70,16 +70,16 @@ export function Services() {
             viewport={{ once: true }}
             className="inline-block mb-4"
           >
-            <div className="px-6 py-2 rounded-full bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 border border-primary/30 backdrop-blur-sm">
-              <span className="text-sm font-semibold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <div className="px-6 py-2 rounded-full glass-card">
+              <span className="text-sm font-semibold gradient-text">
                 COMPREHENSIVE SOLUTIONS
               </span>
             </div>
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 tracking-tight">
-            Integrated Travel <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Services</span>
+            Integrated Travel <span className="gradient-text">Services</span>
           </h2>
-          <p className="text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed">
             Everything you need for a perfect journey, powered by cutting-edge technology
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ export function Services() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8 }}
             >
-              <Card className={`group relative p-8 border border-border/50 bg-card/60 backdrop-blur-xl h-full overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl ${service.glowColor}`}>
+              <Card className="card-elevated group p-8 h-full overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
                 
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -113,7 +113,7 @@ export function Services() {
                   <h3 className="text-2xl font-semibold mb-3 text-foreground group-hover:text-foreground transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/60 leading-relaxed">
                     {service.description}
                   </p>
                   

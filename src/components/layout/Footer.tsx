@@ -10,18 +10,18 @@ export function Footer() {
   });
 
   return (
-    <footer className="relative liquid-glass border-t border-border/30 mt-auto overflow-hidden">
+    <footer className="relative glass-card border-t mt-auto overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none" />
       
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="py-16">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             <div className="col-span-2 md:col-span-1">
-              <div className="font-serif text-2xl font-bold text-holographic mb-4">
+              <div className="text-2xl font-bold gradient-text mb-4">
                 TruTrip.in
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Simplifying business and leisure travel worldwide with liquid glass technology.
+                Simplifying business and leisure travel worldwide with innovative technology.
               </p>
             </div>
 
@@ -31,7 +31,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Home
                   </Link>
@@ -39,7 +39,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/about"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     About
                   </Link>
@@ -47,7 +47,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Services
                   </Link>
@@ -55,7 +55,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/corporate"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Corporate Solutions
                   </Link>
@@ -69,7 +69,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/visa"
-                    className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-secondary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Visa Support
                   </Link>
@@ -77,7 +77,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services"
-                    className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-secondary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Travel Bookings
                   </Link>
@@ -85,7 +85,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/services"
-                    className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-secondary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     MICE Services
                   </Link>
@@ -93,7 +93,7 @@ export function Footer() {
                 <li>
                   <Link
                     to="/contact"
-                    className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-300 inline-block hover:translate-x-1"
+                    className="text-sm text-muted-foreground hover:text-secondary transition-all duration-300 inline-block hover:translate-x-1"
                   >
                     Contact Us
                   </Link>

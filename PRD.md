@@ -1,154 +1,157 @@
 # Planning Guide
 
-Create a revolutionary, immersive travel platform for TruTrip.in that transcends current web design standards with a stunning **Liquid Glass Holographic** theme featuring morphing liquid blobs, aurora borealis effects, iridescent borders, 3D perspective transforms, and an integrated search engine that makes users experience true "wow" moments.
+Create a modern, vibrant travel platform for TruTrip.in featuring a bright **Logo-Inspired Color Theme** with purple, pink, and blue gradients, elegant glass morphism effects, smooth animations, and an integrated search engine that creates a professional and delightful user experience.
 
 **Experience Qualities**:
-1. **Transcendent** - A design that feels like stepping into the future with liquid morphing backgrounds, holographic gradients, aurora effects, and frosted glass surfaces that shift with interaction
-2. **Immersive** - Users feel transported into a digital travel dimension with animated liquid blobs, particle networks, glow effects, and smooth spatial transitions
-3. **Ultra-Premium** - Museum-quality aesthetic with iridescent borders, holographic text, perspective-based 3D cards, and micro-interactions that exceed anything in the current market
+1. **Professional** - A clean, bright design with logo-inspired colors that conveys trust and modern sophistication with glass cards, subtle gradients, and polished interactions
+2. **Vibrant** - Users feel energized by the colorful brand palette with purple-pink-blue gradients, animated elements, and floating background orbs
+3. **Premium** - High-quality aesthetic with glass morphism, elevated cards with hover effects, gradient text, and micro-interactions that showcase attention to detail
 
-**Complexity Level**: Complex Application (advanced functionality with revolutionary visual design)
-  - Multi-page website featuring liquid morphing backgrounds, particle systems with connecting lines, aurora borealis orbs, holographic gradient text effects, 3D perspective card transforms, frosted glass morphism, iridescent animated borders, integrated search functionality, and spatial awareness animations that create an unprecedented travel platform experience.
+**Complexity Level**: Complex Application (advanced functionality with modern visual design)
+  - Multi-page website featuring gradient backgrounds with floating orbs, glass morphism effects, elevated card designs, animated gradient text, integrated search functionality, and smooth hover interactions that create a contemporary travel platform experience.
 
 ## Essential Features
 
-### Liquid Morphing Background System
-- **Functionality**: Animated particle network with glowing connections, liquid morphing blobs that change shape continuously, aurora borealis orbs that drift and pulse, layered gradient effects
-- **Purpose**: Create an otherworldly, transcendent atmosphere that's completely unique in the travel industry
-- **Trigger**: Present on all pages, continuously animates with natural physics
-- **Progression**: Page loads → Particles fade in with glow → Lines connect → Liquid blobs morph → Aurora orbs drift → Continuous ambient animation
-- **Success criteria**: Users pause and say "wow" before scrolling, feel they've never seen anything like it
+### Logo-Inspired Color Theme
+- **Functionality**: Brand color palette featuring purple, pink, and blue with gradient animations, applied consistently across all UI elements
+- **Purpose**: Create a cohesive, recognizable brand identity inspired by the logo colors
+- **Trigger**: Present on all pages throughout the entire interface
+- **Progression**: Page loads → Brand colors visible → Gradients animate → Hover states reveal color transitions
+- **Success criteria**: Colors feel harmonious, professional, and reflect the brand identity
 
-### Holographic Glass Navigation Header with Search
-- **Functionality**: Liquid glass header with holographic borders, animated gradient text logo, integrated search functionality, scroll-reactive opacity, iridescent navigation items
-- **Purpose**: Provide navigation and search access while contributing to the revolutionary aesthetic
+### Modern Gradient Background System
+- **Functionality**: Soft pastel gradient background with floating animated orbs in brand colors, subtle dot pattern overlay
+- **Purpose**: Create a light, airy, modern atmosphere that doesn't overwhelm content
+- **Trigger**: Present on all pages, continuously animates
+- **Progression**: Page loads → Background gradients visible → Orbs float gently → Dot pattern adds texture
+- **Success criteria**: Background is beautiful but subtle, doesn't distract from content
+
+### Glass Morphism Navigation Header with Search
+- **Functionality**: Glass card header with gradient logo, clean navigation, integrated search functionality, scroll-reactive styling
+- **Purpose**: Provide navigation and search access with modern glass aesthetic
 - **Trigger**: Sticky header on all pages, search toggles on click
-- **Progression**: Scroll → Header glass intensifies → Search opens → User types → Results suggest → Gradient effects pulse with interaction
-- **Success criteria**: Header feels like a liquid interface element from the future, search is instantly accessible
+- **Progression**: Scroll → Header glass effect enhances → Search opens → User types → Active states highlight
+- **Success criteria**: Header feels modern and lightweight, search is easily accessible
 
-### Transcendent Home Page Hero
-- **Functionality**: Massive holographic gradient text, liquid glass badge, 3D perspective buttons, animated scroll indicator, floating ambient particles, aurora glow effects
-- **Purpose**: Immediately captivate and communicate unprecedented innovation
+### Hero Section
+- **Functionality**: Large gradient text, glass badge, animated logo, gradient CTA buttons, smooth scroll indicator
+- **Purpose**: Immediately communicate brand identity and value proposition
 - **Trigger**: Landing page entrance
-- **Progression**: Page loads → Holographic text animates in → Particles glow → Liquid blobs pulse → User is mesmerized → CTA draws focus
-- **Success criteria**: Users spend 5+ seconds just appreciating the design before taking action
+- **Progression**: Page loads → Logo and text animate in → Gradient colors shimmer → CTAs invite action
+- **Success criteria**: Hero is impactful and clearly communicates the brand message
 
-### 3D Perspective Glass Cards
-- **Functionality**: Liquid glass cards with holographic animated borders, 3D perspective transforms on hover, gradient overlays, icon animations with glow, shimmer effects
-- **Purpose**: Present services as premium, interactive, futuristic elements
+### Elevated Glass Cards
+- **Functionality**: White elevated cards with subtle shadows, hover transforms, gradient accent colors, icon animations
+- **Purpose**: Present services and content in clean, modern, interactive containers
 - **Trigger**: Cards scroll into view with stagger animation
-- **Progression**: Cards animate in → Hover triggers 3D tilt → Holographic border animates → Icon glows → Gradient overlay fades in → User engages
-- **Success criteria**: Each card interaction feels magical and responsive, users want to hover over every card
+- **Progression**: Cards appear → Hover triggers elevation → Gradient accents appear → User engages
+- **Success criteria**: Each card feels premium and interactive, hover effects are smooth
 
 ### Integrated Search Engine
-- **Functionality**: Liquid glass search input with holographic border, instant toggle in header, mobile-friendly, placeholder animation
+- **Functionality**: Glass search input with clean styling, instant toggle in header, mobile-friendly
 - **Purpose**: Enable destination and content discovery across the platform
 - **Trigger**: Click search icon in header or mobile menu
-- **Progression**: Click search → Input appears with glass effect → User types → Border glows → Search executes
-- **Success criteria**: Search feels integrated into the liquid aesthetic, always accessible
+- **Progression**: Click search → Input appears → User types → Border highlights → Search executes
+- **Success criteria**: Search feels natural and integrated into the design
 
 ### Multi-Page Experience (Home, About, Services, Corporate, Visa, Contact)
-- **Functionality**: All pages share the liquid morphing background and holographic glass design language with page-specific content
-- **Purpose**: Comprehensive information architecture with consistent revolutionary experience
+- **Functionality**: All pages share the gradient background and glass design language with page-specific content
+- **Purpose**: Comprehensive information architecture with consistent modern experience
 - **Trigger**: Navigation between pages
-- **Progression**: Click nav → Smooth transition → Background persists → Content fades with glass effects
-- **Success criteria**: All pages feel equally impressive and cohesive, seamless navigation
+- **Progression**: Click nav → Smooth transition → Background persists → Content updates
+- **Success criteria**: All pages feel cohesive and professional, navigation is seamless
 
-### Enhanced Liquid Glass Footer
-- **Functionality**: Frosted glass footer with holographic text, animated link hovers with translation, gradient separators, compliance information
-- **Purpose**: Complete the premium experience while providing necessary information
+### Modern Glass Footer
+- **Functionality**: Glass card footer with gradient branding, clean link layout, compliance information
+- **Purpose**: Complete the professional experience while providing necessary information
 - **Trigger**: Bottom of every page
-- **Progression**: Scroll to bottom → Footer revealed → Links animate on hover → Glass effects shimmer
-- **Success criteria**: Even the footer feels special and contributes to the "wow" factor
+- **Progression**: Scroll to bottom → Footer revealed → Links respond to hover
+- **Success criteria**: Footer feels complete and matches the overall design quality
 
 ## Edge Case Handling
 
-- **Performance**: Particle and liquid animations use requestAnimationFrame, optimized for smooth 60fps on desktop, reduced complexity on mobile
-- **Reduced motion**: Respect prefers-reduced-motion by disabling liquid morphing and limiting animations
-- **Mobile devices**: Reduced particle count, simplified liquid blob count, optimized blur effects, touch-optimized interactions
-- **Slow connections**: Animations work without external dependencies, progressive enhancement approach
-- **Older browsers**: Graceful degradation of backdrop-filter, blur effects, and complex animations
-- **High contrast mode**: Ensure holographic text remains readable, increase contrast ratios
+- **Performance**: Animations use CSS transforms and opacity for 60fps performance
+- **Reduced motion**: Respect prefers-reduced-motion by simplifying animations
+- **Mobile devices**: Responsive design with touch-optimized interactions, readable text sizes
+- **Slow connections**: CSS-based effects work without external dependencies
+- **Older browsers**: Graceful degradation of backdrop-filter and advanced CSS features
+- **High contrast mode**: Ensure gradient text remains readable with fallback solid colors
 
 ## Design Direction
 
-The design should feel like entering a liquid holographic portal to the future of travel - transcendent, ultra-premium, and unlike anything currently in existence. Think Apple's premium aesthetic meets holographic interfaces meets liquid morphing art installations. Users should feel they're experiencing cutting-edge technology that doesn't exist yet. The interface should be rich with subtle animations, holographic gradients, liquid morphing surfaces, aurora glows, and depth created through layering, blur, and 3D perspective transforms.
+The design should feel like a modern, professional travel platform with bright, vibrant brand colors that inspire confidence and excitement. Think contemporary SaaS aesthetics meets travel industry - clean, minimal, with purposeful use of gradients and glass effects. The interface should be bright and welcoming while maintaining premium quality through attention to detail in spacing, typography, and micro-interactions.
 
 ## Color Selection
 
-Custom palette with electric purple/magenta, cyan/blue, and mint/green creating a holographic, aurora-inspired atmosphere with extreme depth through ultra-dark backgrounds.
+Logo-inspired palette with purple, pink, and blue creating a vibrant, modern atmosphere against light backgrounds.
 
-- **Primary Color**: Electric Magenta (oklch(0.72 0.24 310)) - Communicates innovation and creates striking holographic combinations; vibrant and eye-catching
-- **Secondary Colors**: Holographic Cyan (oklch(0.68 0.26 200)) - Adds cool contrast and creates stunning gradient combinations with magenta for aurora effects
-- **Accent Color**: Aurora Mint (oklch(0.75 0.28 160)) - Provides fresh energy and completes the holographic triad; creates depth with purple/cyan
-- **Background**: Deep Void (oklch(0.08 0.08 280)) - Ultra-dark background that makes holographic colors pop and creates infinite depth
+- **Primary Color**: Brand Purple (oklch(0.58 0.24 260)) - Main brand color for primary actions and key elements; professional and distinctive
+- **Secondary Colors**: Brand Pink (oklch(0.65 0.22 330)) - Supporting color for variety and visual interest in gradients
+- **Accent Color**: Brand Blue (oklch(0.62 0.26 200)) - Fresh accent for CTAs and highlights, completes the color triad
+- **Background**: Light Neutral (oklch(0.99 0.005 280)) - Clean, bright background that makes colors pop
 - **Foreground/Background Pairings**:
-  - Background (Deep Void oklch(0.08 0.08 280)): Near-white text (oklch(0.98 0.005 280)) - Ratio 18.1:1 ✓
-  - Card (Liquid Glass oklch(0.12 0.06 285 / 0.4)): Near-white text (oklch(0.98 0.005 280)) - Ratio 15.2:1 ✓
-  - Primary (Electric Magenta oklch(0.72 0.24 310)): Near-white text (oklch(0.98 0.005 280)) - Ratio 8.7:1 ✓
-  - Secondary (Holographic Cyan oklch(0.68 0.26 200)): Near-white text (oklch(0.98 0.005 280)) - Ratio 7.9:1 ✓
-  - Accent (Aurora Mint oklch(0.75 0.28 160)): Deep Void text (oklch(0.08 0.08 280)) - Ratio 13.4:1 ✓
-  - Muted (Glass oklch(0.15 0.04 280 / 0.3)): Muted text (oklch(0.60 0.03 280)) - Ratio 5.1:1 ✓
+  - Background (Light Neutral oklch(0.99 0.005 280)): Dark text (oklch(0.20 0.02 260)) - Ratio 16.5:1 ✓
+  - Card (White oklch(1 0 0)): Dark text (oklch(0.20 0.02 260)) - Ratio 18.2:1 ✓
+  - Primary (Brand Purple oklch(0.58 0.24 260)): White text (oklch(0.99 0.005 280)) - Ratio 5.1:1 ✓
+  - Secondary (Brand Pink oklch(0.65 0.22 330)): White text (oklch(0.99 0.005 280)) - Ratio 4.8:1 ✓
+  - Accent (Brand Blue oklch(0.62 0.26 200)): White text (oklch(0.99 0.005 280)) - Ratio 4.9:1 ✓
+  - Muted (Light Gray oklch(0.96 0.01 260)): Medium text (oklch(0.50 0.02 260)) - Ratio 7.2:1 ✓
 
 ## Font Selection
 
-Modern, tech-forward typography that communicates innovation while maintaining exceptional readability - Outfit for headings creates a distinctive geometric look, Inter for body ensures clarity.
+Modern, professional typography that's highly readable - Poppins for headings creates impact, Inter for body ensures clarity.
 
 - **Typographic Hierarchy**:
-  - H1 (Hero title): Outfit Bold/96px/extra tight letter spacing (-0.02em) - Maximum impact with holographic gradient text effect
-  - H2 (Section headers): Outfit Bold/64px/tight letter spacing (-0.02em) - Strong hierarchy with holographic effects
-  - H3 (Card titles): Outfit SemiBold/32px/tight spacing (-0.01em) - Clear categorization with gradient potential
-  - Body (Primary content): Inter Regular/20px/1.7 line height - Comfortable reading with enhanced line height
-  - Small (Supporting text): Inter Regular/16px/1.6 line height - Clear secondary information
-  - CTA Buttons: Outfit SemiBold/20px/normal spacing - Confident, premium, clickable
+  - H1 (Hero title): Poppins Bold/72-80px/tight letter spacing (-0.02em) - Maximum impact with gradient effect
+  - H2 (Section headers): Poppins Bold/56-64px/tight letter spacing (-0.02em) - Clear section hierarchy
+  - H3 (Card titles): Poppins SemiBold/24px/tight spacing (-0.01em) - Clean subsection headers
+  - Body (Primary content): Inter Regular/16-18px/1.6 line height - Comfortable reading
+  - Small (Supporting text): Inter Regular/14px/1.5 line height - Clear secondary information
+  - CTA Buttons: Poppins SemiBold/16px/normal spacing - Clear, confident calls to action
 
 ## Animations
 
-Animations are the soul of the experience - they create the liquid, holographic, transcendent feeling that makes users experience wonder while remaining purposeful and performant.
+Animations enhance the experience with smooth, purposeful motion that feels modern without being distracting.
 
-- **Purposeful Meaning**: Liquid morphing creates organic life; aurora drifts suggest cosmic energy; holographic borders communicate futurism; particle glows emphasize connectivity; 3D transforms reward exploration; shimmer effects suggest luxury
-- **Hierarchy of Movement**: Liquid blobs (constant slow morph) → Aurora orbs (gentle drift) → Particles (subtle glow and connect) → Section reveals (scroll-triggered fade) → Card 3D transforms (hover-based) → Holographic borders (continuous animation) → Button effects (instant rewarding feedback)
+- **Purposeful Meaning**: Floating orbs create ambient life; gradient shifts suggest dynamism; hover elevations reward exploration; fade-ins provide polish; shimmer effects suggest premium quality
+- **Hierarchy of Movement**: Floating orbs (slow constant) → Gradient animations (medium pace) → Scroll reveals (smooth fade) → Card hover effects (instant responsive) → Button interactions (quick rewarding feedback)
 
 ## Component Selection
 
 - **Components**: 
-  - Card: Liquid glass style with holographic animated borders, backdrop-blur-xl, semi-transparent with iridescent edges
-  - Button: Holographic gradient backgrounds with shimmer overlay, 3D perspective transforms, glow shadows
-  - Input: Liquid glass with holographic focus rings, animated borders
-  - Badge: Frosted glass with holographic borders and gradient text
-  - Sheet: Liquid glass mobile menu with holographic elements
-  - Toast (Sonner): Themed to match liquid glass holographic aesthetic
+  - Card: Elevated white cards with subtle shadows and hover transforms
+  - Button: Gradient backgrounds with shimmer effects, solid outline variants
+  - Input: Clean borders with focus states, glass styling for search
+  - Badge: Glass styling with gradient text
+  - Sheet: Glass mobile menu with clean layout
+  - Toast (Sonner): Themed to match glass aesthetic
 - **Customizations**: 
-  - Liquid morphing blob system with CSS animations
-  - Aurora orb drift system with transform animations
-  - Canvas-based particle network with glowing connections
-  - Holographic gradient text with animated background-position
-  - 3D perspective card transforms on hover
-  - Iridescent animated borders using gradient masks
-  - Shimmer overlay effects for premium feel
-  - Glass reflection sweep animations
-  - Scroll-triggered reveal with stagger delays
+  - Gradient background system with floating orbs
+  - Animated gradient text effects
+  - Elevated card hover effects
+  - Glass morphism styling
+  - Shimmer overlay effects
+  - Dot pattern backgrounds
+  - Smooth floating animations
 - **States**: 
-  - Navigation: Holographic border on active, liquid glass on hover, gradient glow effect
-  - Buttons: 3D scale transform on hover, shimmer animation, holographic gradient shift, shadow expansion
-  - Cards: 3D perspective tilt on hover (translateY -8px, rotateX/Y), holographic border animation, gradient overlay fade
-  - Inputs: Holographic glow ring on focus, border color shift to primary
-  - Links: Translate-x on hover, holographic text color shift
+  - Navigation: Active state with gradient underline, hover with background tint
+  - Buttons: Gradient backgrounds with shimmer, hover with scale transform
+  - Cards: Elevation on hover (translateY -4px), subtle shadow expansion
+  - Inputs: Border color shift to primary on focus
+  - Links: Subtle translate-x on hover
 - **Icon Selection**: 
-  - Phosphor Icons with duotone weight for depth and dimension
-  - Animated on hover with scale, rotate, and glow effects
-  - Wrapped in holographic bordered containers with blur effects
-  - Icons glow with holographic colors on interaction
+  - Phosphor Icons with duotone weight for visual interest
+  - Animated on hover with scale effects
+  - Colored with brand palette to match context
 - **Spacing**: 
-  - Section padding: py-32 for maximum breathing room and luxury feel
-  - Card gaps: gap-8 for clear separation and glass effect showcase
-  - Extra-large radius: 1.5rem for ultra-modern, liquid feel
-  - Generous whitespace to let holographic and glass effects shine
+  - Section padding: py-20 to py-24 for generous breathing room
+  - Card gaps: gap-6 for clear separation
+  - Moderate radius: 1rem for modern, friendly feel
+  - Generous whitespace to showcase clean design
 - **Mobile**: 
-  - Reduced particle count (40 instead of 100) for performance
-  - Fewer liquid blobs (2-3 instead of 5-6) for optimization
-  - Maintained liquid glass effects with optimized blur values
-  - Touch-optimized hover states with tap-based activation
-  - Responsive holographic text sizing with viewport units
-  - Stacked layouts with full-width perspective cards
-  - Search integrated into mobile menu for accessibility
+  - Fully responsive with mobile-first approach
+  - Touch-optimized tap targets (min 44px)
+  - Maintained glass effects with optimized performance
+  - Responsive text sizing
+  - Stacked layouts with full-width cards
+  - Search integrated into mobile menu
