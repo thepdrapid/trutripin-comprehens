@@ -24,27 +24,30 @@ export function ImmersiveBackground() {
     }> = [];
 
     const colors = [
-      'oklch(0.75 0.19 195)',
-      'oklch(0.70 0.22 310)',
-      'oklch(0.80 0.25 35)',
+      'rgba(179, 89, 255, ',
+      'rgba(89, 200, 255, ',
+      'rgba(139, 255, 194, ',
+      'rgba(255, 122, 215, ',
     ];
 
-    for (let i = 0; i < 80; i++) {
+    const particleCount = window.innerWidth < 768 ? 40 : 100;
+
+    for (let i = 0; i < particleCount; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        radius: Math.random() * 2 + 1,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        radius: Math.random() * 2.5 + 0.5,
         color: colors[Math.floor(Math.random() * colors.length)],
-        opacity: Math.random() * 0.5 + 0.3,
+        opacity: Math.random() * 0.6 + 0.2,
       });
     }
 
     function animate() {
       if (!ctx || !canvas) return;
 
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillStyle = 'rgba(10, 1, 24, 0.08)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle, i) => {
@@ -56,8 +59,11 @@ export function ImmersiveBackground() {
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        ctx.fillStyle = particle.color.replace(')', ` / ${particle.opacity})`);
+        ctx.fillStyle = particle.color + particle.opacity + ')';
+        ctx.shadowBlur = 15;
+        ctx.shadowColor = particle.color + '0.5)';
         ctx.fill();
+        ctx.shadowBlur = 0;
 
         particles.forEach((otherParticle, j) => {
           if (i === j) return;
@@ -65,12 +71,13 @@ export function ImmersiveBackground() {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 150) {
+          if (distance < 120) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = particle.color.replace(')', ` / ${0.1 * (1 - distance / 150)})`);
-            ctx.lineWidth = 0.5;
+            const opacity = 0.15 * (1 - distance / 120);
+            ctx.strokeStyle = particle.color + opacity + ')';
+            ctx.lineWidth = 1;
             ctx.stroke();
           }
         });
@@ -95,12 +102,16 @@ export function ImmersiveBackground() {
       <canvas
         ref={canvasRef}
         className="fixed inset-0 pointer-events-none z-0"
-        style={{ opacity: 0.6 }}
+        style={{ opacity: 0.7 }}
       />
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="aurora-orb absolute top-[10%] left-[15%] w-[500px] h-[500px] bg-primary/30" style={{ animationDelay: '0s', animationDuration: '25s' }} />
+        <div className="aurora-orb absolute top-[60%] right-[10%] w-[600px] h-[600px] bg-secondary/25" style={{ animationDelay: '5s', animationDuration: '30s' }} />
+        <div className="aurora-orb absolute bottom-[5%] left-[40%] w-[550px] h-[550px] bg-accent/20" style={{ animationDelay: '10s', animationDuration: '28s' }} />
+        
+        <div className="liquid-blob absolute top-[20%] right-[20%] w-[400px] h-[400px] bg-gradient-to-br from-primary/20 to-secondary/20" style={{ animationDelay: '0s' }} />
+        <div className="liquid-blob absolute bottom-[30%] left-[10%] w-[350px] h-[350px] bg-gradient-to-tr from-accent/15 to-primary/15" style={{ animationDelay: '3s' }} />
+        <div className="liquid-blob absolute top-[50%] left-[50%] w-[450px] h-[450px] bg-gradient-to-bl from-secondary/15 to-accent/20" style={{ animationDelay: '7s' }} />
       </div>
     </>
   );
