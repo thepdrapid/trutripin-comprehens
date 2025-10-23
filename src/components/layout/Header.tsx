@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { List, X } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
+import logoImage from '@/assets/images/1080x1080-PNG.png';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -24,7 +25,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logoImage} alt="TruTrip.in Logo" className="h-10 w-10 object-contain" />
             <div className="font-serif text-2xl font-bold text-primary">
               TruTrip<span className="text-accent">.in</span>
             </div>
@@ -60,8 +62,11 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex items-center justify-between mb-8">
-                  <div className="font-serif text-xl font-bold text-primary">
-                    TruTrip<span className="text-accent">.in</span>
+                  <div className="flex items-center space-x-2">
+                    <img src={logoImage} alt="TruTrip.in Logo" className="h-8 w-8 object-contain" />
+                    <div className="font-serif text-xl font-bold text-primary">
+                      TruTrip<span className="text-accent">.in</span>
+                    </div>
                   </div>
                   <Button
                     variant="ghost"
